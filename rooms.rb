@@ -2,7 +2,13 @@ class Rooms
 
 attr_reader :name
 
-  def initialize(name)
+def initialize(name)
   @name = name
-  end
+  @guests = []
+end
+
+def guest_count()
+return  @guests.count()
+end
+
 end
